@@ -26,8 +26,8 @@ location_dict={"Ba Vì":"Ba Vi",
         "Quận 12": "District 12",
         "Quận 8": "District 8",
         "Quận 9": "District 9",
-        "Hải Phòng": "Haiphong",
-        "Hà Nội": "Hanoi",
+        "Hải Phòng": "Hai phong",
+        "Hà Nội": "Ha Noi",
         "Thành Phố Hồ Chí Minh": "Ho Chi Minh City",
         "Huế": "Hue",
         "Nha Trang": "Nha Trang",
@@ -56,7 +56,7 @@ class Weather(scrapy.Spider):
 
 def get_temp(location):
     for l, t in all_weather:
-        if l==location:
+        if location_dict[l]==location:
             global temp
             temp=int(t[:-1])
             return "Nhiệt độ ở "+ l + " là "+ t
