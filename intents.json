@@ -1,0 +1,63 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there",
+        "Hello",
+        "Greet"
+      ],
+      "responses": [
+        "Hello! To find the right tree for you, start by telling us where you are?"
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Ba Vi",
+        "Bac Tu Liem",
+        "Bien Hoa",
+        "Binh Chanh",
+        "Binh Tan",
+        "Binh Thanh",
+        "Can Tho",
+        "Cau Giay",
+        "Chuong My",
+        "Cu Chi",
+        "Da Nang",
+        "District 12",
+        "District 8",
+        "District 9",
+        "Haiphong",
+        "Hanoi",
+        "Ho Chi Minh City",
+        "Hue",
+        "Nha Trang",
+        "Quy Nhon"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "plant_location",
+      "patterns": [
+        "Balcony",
+        "Garden",
+        "Rooftop",
+        "In home",
+        "Inside home"
+      ],
+      "responses": [
+        ""
+      ]
+    }
+  ],
+  "error": [
+    "I didn't understand",
+    "Can you please clarify the question?"
+  ]
+}
